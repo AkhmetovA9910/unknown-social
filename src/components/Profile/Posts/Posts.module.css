@@ -1,0 +1,29 @@
+.posts {
+   width: 100%;
+   padding: 20px 40px;
+   border-top: 1px solid rgba(0, 0, 0, 0.3);
+   background-color: #fff;
+}
+.posts__label {
+   margin: 0px 0px 10px 0px;
+}
+.posts__list {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+.posts__addPost {
+   width: 100%;
+   margin: 0 0 20px 0;
+   display: flex;
+   flex-direction: column;
+}
+.posts__addPostButton {
+   border-radius: 4px;
+   height: 30px;
+   width: 90px;
+   font-size: 16px;
+   background-color: #105ab1;
+   color: #fff;
+   align-self: flex-end;
+}

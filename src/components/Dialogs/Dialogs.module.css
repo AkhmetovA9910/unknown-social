@@ -1,0 +1,71 @@
+.dialogs {
+   width: 100%;
+   height: 100%;
+   display: grid;
+   grid-template-columns: 1fr 3fr;
+   grid-template-rows: 60px 1fr 50px;
+   grid-template-areas: "label dialog" "list messages" "list input";
+}
+.dialogs__label {
+   grid-area: label;
+   background-color: #ededed;
+   border-right: 1px solid #dadada;
+   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.15);
+   z-index: 2;
+}
+.dialogs__list {
+   grid-area: list;
+   background-color: #fff;
+   border-right: 1px solid #dadada;
+}
+.dialogs__dialog {
+   grid-area: dialog;
+   background-color: #ededed;
+   border-bottom: 1px solid #dadada;
+   display: flex;
+   align-items: center;
+   padding: 0 20px;
+   z-index: 3;
+}
+.dialogs__messagesarea {
+   grid-area: messages;
+   background-color: rgba(255, 255, 255, 0.5);
+   z-index: 3;
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+}
+.dialogs__inputarea {
+   grid-area: input;
+   background-color: #e7eaed;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.dialogs__userpicture {
+   height: 40px;
+   width: 40px;
+   border-radius: 50%;
+   overflow: hidden;
+   margin: 0px 20px 0px 0px;
+}
+.dialogs__userpicture img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+.dialogs__username {
+   font-size: 20px;
+}
+.dialogs__sendMessageButton {
+   background-color: transparent;
+   margin: 0 0 0 20px;
+}
+.dialogs__sendMessageButton span {
+   color: #329a7d;
+   font-size: 34px;
+}
+.dialogs__sendMessageButton:hover span {
+   color: #287a63;
+}

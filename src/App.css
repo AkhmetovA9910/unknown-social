@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Style+Script&display=swap");
+
+.grid-container {
+   max-width: 1080px;
+   height: 100%;
+   margin: 0 auto;
+   display: grid;
+   grid-template-rows: 70px 1fr 50px;
+   grid-template-columns: 3fr 9fr;
+   grid-template-areas: "header header" "sidebar content" "footer footer";
+}
+
+.app-wrapper {
+   font-family: "Roboto", sans-serif;
+   /* background: rgb(6, 92, 176);
+   background: linear-gradient(
+      45deg,
+      rgba(6, 92, 176, 1) 0%,
+      rgba(182, 63, 204, 1) 33%,
+      rgba(255, 85, 97, 1) 66%,
+      rgba(252, 176, 69, 1) 100%
+   ); */
+   background: url("./assets/images/background.png") 0 0 / cover no-repeat;
+   height: 100vh;
+   width: 100%;
+}
+
+.content {
+   grid-area: content;
+   overflow-y: auto;
+   /* box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.25); */
+}
+
+::-webkit-scrollbar {
+   width: 14px;
+}
+::-webkit-scrollbar-track {
+   background-color: #f3f3f3;
+}
+::-webkit-scrollbar-thumb {
+   background: #c4c4c4;
+   border: 3px solid #f3f3f3;
+   border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+   background: linear-gradient(to bottom, #8a34b4, #e49554);
+}
+
+@font-face {
+   font-family: "social-network-icons";
+   src: url("./assets/fonts/social-network-icons.eot?h8qyv1");
+   src: url("./assets/fonts/social-network-icons.eot?h8qyv1#iefix") format("embedded-opentype"),
+      url("./assets/fonts/social-network-icons.ttf?h8qyv1") format("truetype"),
+      url("./assets/fonts/social-network-icons.woff?h8qyv1") format("woff"),
+      url("./assets/fonts/social-network-icons.svg?h8qyv1#social-network-icons") format("svg");
+   font-weight: normal;
+   font-style: normal;
+   font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+   /* use !important to prevent issues with browser extensions that change fonts */
+   font-family: "social-network-icons" !important;
+   speak: never;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+
+   /* Better Font Rendering =========== */
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-send:before {
+   content: "\e909";
+}
+.icon-logout:before {
+   content: "\e908";
+}
+.icon-arrow:before {
+   content: "\e900";
+}
+.icon-edit:before {
+   content: "\e901";
+}
+.icon-messages:before {
+   content: "\e902";
+}
+.icon-music:before {
+   content: "\e903";
+}
+.icon-news:before {
+   content: "\e904";
+}
+.icon-profile:before {
+   content: "\e905";
+}
+.icon-settings:before {
+   content: "\e906";
+}
+.icon-users:before {
+   content: "\e907";
+}

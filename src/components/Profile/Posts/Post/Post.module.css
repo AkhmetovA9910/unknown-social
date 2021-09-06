@@ -1,0 +1,53 @@
+.post {
+   display: grid;
+   grid-template-rows: 24px 20px 1fr;
+   grid-template-columns: 80px 1fr;
+   grid-template-areas: "picture name" "picture login" "picture post";
+   margin: 0px 0px 10px 0px;
+   border: 1px solid rgba(0, 0, 0, 0.3);
+}
+.post__userpicture {
+   grid-area: picture;
+   height: 80px;
+   width: 60px;
+   overflow: hidden;
+   margin: 10px;
+}
+.post__userpicture img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+.post__username {
+   grid-area: name;
+   padding: 10px 0 0 0;
+   font-size: 16px;
+}
+.post__userlogin {
+   grid-area: login;
+   color: rgba(0, 0, 0, 0.7);
+   padding: 5px 0 0 0;
+}
+.post__body {
+   grid-area: post;
+   margin: 0px 10px 10px 0px;
+   padding: 10px;
+}
+.post__text {
+   font-size: 16px;
+}
+.post__actions {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   height: 22px;
+}
+.post__like {
+   font-size: 14px;
+   color: #318ce7;
+   background-color: transparent;
+}
+.post__likescount {
+   margin: 0px 10px 0px 0px;
+}

@@ -1,0 +1,22 @@
+.users__pages {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 40px;
+}
+.users__pageButton,
+.users__threePointer {
+   font-size: 20px;
+   color: #535353;
+   background-color: transparent;
+}
+.users__pageButton.currentPage,
+.users__arrowPageButton {
+   background-color: transparent;
+   color: #1b1b1b;
+   font-size: 22px;
+}
+.users__arrowPageButton.disabled {
+   color: #858585;
+}
